@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form >
+    <h3>Thêm mới nhân viên</h3>
+    <div>
+    <label for="userName">Họ và tên</label>
+    <input
+    required
+    name ="userName"
+     id="userName"
+      type="text" />
+</div>
+<br>
+        <div>
+            <label for="experience">Năm kinh nghiệm (1-10)</label>
+            <input type="number" name="experience" id="experience" min="1" max="10" required />
+        </div>
+<br>
+<div>
+    <label for="dateOfBirth">Ngày sinh đầy đủ</label>
+    <input name ="dateOfBirth" id = "dateOfBirth" type="date">
+</div>
+<br>
+<div>
+    <label for="monthAndYear">Tháng và năm</label>
+    <input name ="monthAndYear" id = "monthAndYear" type="month">
+</div>
+<br>
+<div>
+    <label for="time">Thời gian</label>
+    <input type="time">
+</div>
+<br>
+<div>
+    <label for="gender">Giới tính</label>
+    <input name="gender" id = "gender" type="radio" /> Nam
+    <input name="gender" id = "gender" type="radio" /> Nữ
+    <input name="gender" id = "gender" type="radio" /> Khác
+</div>
+<br>
+        <div>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" />
+            
+        </div>
+<br>
+<div>
+    <label for="password">Mật khẩu</label>
+    <input required name="password" id = "password" type="text" minlength="8" > 
+</div>
+<br>
+<div>
+    <label for="review">Giới thiệu bản thân</label>
+    <textarea name="review" id="review" cols="20" rows="3"></textarea>
+</div>
+<br>
+        <div>
+            <label for ="city">Thành phố </label>
+            <select name="city" id="city" multiple>
+                <option value="">Hà Nội</option>
+                <option value="">Đà Nẵng</option>
+                <option value="">TP HCM</option>
+            </select>    
+        </div>
+<br>
+<div>
+    <label for="file">Hình ảnh</label>
+    <input type="file" id="file-upload" required />
+</div>
+<br>
+        <div>
+            <label for ="">Sở thích </label>
+
+            <input type="checkbox"/> Code  
+            <input type="checkbox"/> Chơi game  
+            <input type="checkbox"/> Bơi lội     
+            <input type="checkbox"/> Đá bóng    
+             
+        </div>
+        <br>
+        <button type="submit">Gửi</button>
+        <button type="reset">Reset</button>
+</body>
+</html>
